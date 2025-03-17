@@ -61,7 +61,7 @@ public class Main {
         boolean first = true;
         String msg = "R = [";
         for (int i = 1; i < L.length; i++) {
-            if (L[i] == L[i - 1]) {
+           if (L[i] == L[i - 1]) {
                 if (i == 1 || L[i] != L[i - 2]) {
                     if (!first) {
                         msg += ", ";
@@ -86,7 +86,7 @@ public class Main {
         return "Es un palindromo";
     }
 
-    public static int se3_3(String bits){
+    public static int se3_3 (String bits){
         int bit = 0;
         for (int i = 0; i < bits.length(); i++) {
             if (bits.charAt(i) == '1') {
