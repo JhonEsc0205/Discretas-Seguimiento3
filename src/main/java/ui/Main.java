@@ -58,6 +58,17 @@ public class Main {
     }
 
     public static String se3_1(int[] L){
+        for (int i = 0; i < L.length; i++) {
+            int minimum = i;
+            for (int j = i + 1; j < L.length; j++) {
+                if (L[j] < L[minimum]) {
+                    minimum = j;
+                }
+            }
+            int temp = L[minimum];
+            L[minimum] = L[i];
+            L[i] = temp;
+        }
         boolean first = true;
         String msg = "R = [";
         for (int i = 1; i < L.length; i++) {
