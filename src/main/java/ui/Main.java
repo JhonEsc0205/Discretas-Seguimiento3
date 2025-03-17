@@ -8,7 +8,7 @@ public class Main {
         int opcion = 0;
         do {
             System.out.println(
-                    "--------------------------------------------------------------------------------------------\n" +
+                            "--------------------------------------------------------------------------------------------\n" +
                             "|                                       INTEGRANTES                                        |\n" +
                             "|                                Jhon Edwin Escudero Arias                                 |\n" +
                             "|                                Jhon David Copete Viatela                                 |\n" +
@@ -39,16 +39,16 @@ public class Main {
                 case 2 -> {
                     System.out.println("Con cuantas palabras desea comprobar?");
                     int comprobar = sc.nextInt();
-                    sc.next();
                     for (int i = 0; i < comprobar; i++) {
                         System.out.println("Introduzca una palabra");
+                        sc.next();
                         String palabra = sc.nextLine();
                         System.out.println(se3_2(palabra));
                     }
                 }
                 case 3 -> {
                     System.out.println("Ingrese la cadena de bits");
-                    sc.next();
+                    sc.nextLine();
                     String bits = sc.nextLine();
                     System.out.println(se3_3(bits));
 
@@ -90,7 +90,7 @@ public class Main {
         int bit = 0;
         for (int i = 0; i < bits.length(); i++) {
             if (bits.charAt(i) == '1') {
-                bit ++;
+                bit++;
             }
         }
         return bit;
